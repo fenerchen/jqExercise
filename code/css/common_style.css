@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    height: 106px;
+    background: url(../images/headerbg.png) repeat-x scroll;
+    /*scrool和混动条一起滚动*/
+}
+
+#header-top,
+#header-bottom {
+    width: 990px;
+    height: 66px;
+    margin: 0 auto;
+    /*border: 1px solid;*/
+}
+
+#logo {
+    float: left;
+    height: 66px;
+    width: 158px;
+    background: url(../images/logo.gif) no-repeat scroll;
+}
+
+#search input {
+    float: left;
+    height: 28px;
+    width: 212px;
+    border: 1px solid #999;
+    color: #ccc;
+    font-size: 15px;
+    padding-left: 6px;
+    margin: 18px 38px;
+    background: url(../images/zoom.gif) no-repeat 180px 0 #fff;
+    /*左移180px 其余部分用#fff填充*/
+    overflow: hidden;
+}
+
+#search-button {
+    position: absolute;
+    top: 26px;
+    left: 526px;
+    /*z-index: 9;*/
+    opacity: 0;
+    cursor: pointer;
+}
+
+#search input.focus {
+    border: 1px solid #00A5FF;
+}
+
+#change-color {
+    float: right;
+    width: 150px;
+    height: 30px;
+    margin-top: 12px;
+}
+
+#change-color span {
+    display: inline-block;
+    height: 15px;
+    width: 16px;
+    overflow: hidden;
+    background: url(../images/theme.gif) no-repeat;
+}
+
+#deepblue.selected {
+    background-position: 0px -15px;
+}
+
+#deepblue.deepblue-class {
+    background-position: 0px 0px;
+}
+
+#green.green-class {
+    background-position: -19px 0;
+}
+
+#green.selected {
+    background-position: -19px -15px;
+}
+
+#orange.orange-class {
+    background-position: -38px 0;
+}
+
+#orange.selected {
+    background-position: -38px -15px;
+}
+
+#lightblue.lightblue-class {
+    background-position: -58px 0;
+}
+
+#lightblue.selected {
+    background-position: -58px -15px;
+}
+
+#red.red-class {
+    background-position: -78px 0;
+}
+
+#red.selected {
+    background-position: -78px -15px;
+}
+
+#purple.purple-class {
+    background-position: -98px 0;
+}
+
+#purple.selected {
+    background-position: -98px -15px;
+}
+
+#header-bottom {
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    position: relative;
+}
+
+#header-bottom ul li {
+    float: left;
+    margin-left: 30px;
+}
+
+#header-bottom ul li a {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+#header-bottom ul li a:hover {
+    text-decoration: underline;
+}
+
+#header-bottom ul li:nth-of-type(5) a {
+    /*第5个li下的a元素，与#header-bottom ul li:nth-child(5) a 区别，但在此是一样的;*/
+    letter-spacing: 1px;
+}
+
+#band-show,
+#girl-show,
+#boy-show {
+    position: absolute;
+    height: 70px;
+    width: 520px;
+    border: 1px solid #bbb;
+    border-top: none;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.name {
+    width: 80px;
+    height: 70px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+#band-show {
+    left: 95px;
+    top: 40px;
+    /*opacity: 0;*/
+    display: none;
+}
+
+#girl-show {
+    left: 165px;
+    top: 40px;
+    /*opacity: 0;*/
+    display: none;
+}
+
+#boy-show {
+    left: 234px;
+    top: 40px;
+    display: none;
+    /*opacity: 0;*/
+}
+
+#band-show ul li,
+#girl-show ul li,
+#boy-show ul li {
+    margin: 12px 0 0 0;
+    padding: 0 6px;
+    height: 15px;
+    border-right: 1px solid #999;
+}
+
+#band-show ul li a,
+#girl-show ul li a,
+#boy-show ul li a {
+    display: inline-block;
+    float: left;
+    height: 15px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+    color: #666;
+}
+#content {
+    width: 990px;
+    height: 558px;
+    margin: 10px auto;
+}
+
+#content-list {
+    width: 186px;
+    height: 558px;
+
+    border: 1px solid;
+    float: left;
+}
+
+.classify {
+    height: 28px;
+    border: 1px solid;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    padding-left: 14px;
+    letter-spacing: 1px;
+}
+
+.clothes {
+    width: 164px;
+    height: 28px;
+    border-bottom: 1px solid #ccc;
+    line-height: 32px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+#promotion,
+#female,
+#men,
+#bag {
+    width: 164px;
+    height: 131px;
+    margin: 0 auto;
+}
+
+#promotion {
+    position: relative;
+}
+
+#hot1,
+#hot2 {
+    position: absolute;
+    width: 21px;
+    height: 16px;
+}
+
+#hot1 {
+    background: url(../images/hot.gif);
+    left: 26px;
+    top: 94px;
+}
+
+#hot2 {
+    background: url(../images/hot.gif);
+    left: 128px;
+    top: 30px;
+}
+
+#promotion ul,
+#female ul,
+#men ul,
+#bag ul {
+    float: left;
+    margin: 2px 36px 0 0;
+}
+
+#promotion ul li,
+#female ul li,
+#men ul li,
+#bag ul li {
+    margin-top: 7px;
+}
+
+#promotion ul li a.red {
+    color: #f00;
+}
+
+#promotion ul li a,
+#female ul li a,
+#men ul li a,
+#bag ul li a {
+    color: #333;
+    font-size: 13px;
+}
+
+#promotion ul li a:hover,
+#female ul li a:hover,
+#men ul li a:hover,
+#bag ul li a:hover {
+    color: #06f;
+}
+#content-right {
+    width: 790px;
+    height: 558px;
+    float: right;
+    /*border:1px solid;*/
+}
+footer{
+    height:80px;
+    text-align: center;
+    line-height: 80px;
+    color:#666;
+    font-size: 15px;
+}

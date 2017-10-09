@@ -1,0 +1,193 @@
+
+#content-right-top {
+    width: 100%;
+    height: 321px;
+}
+
+#content-right-ads {
+    width: 550px;
+    height: 321px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+#content-right-ads img {
+    position: absolute;
+    display:   none;
+}
+
+#content-right-ads img:nth-of-type(1) {
+    display:  block;
+}
+
+#content-right-ads ul {
+    position: absolute;
+    top: 283px;
+}
+#content-right-ads ul li:nth-of-type(1){
+    background: #0af;
+
+}
+#content-right-ads ul li {
+    float: left;
+    width: 108px;
+    height: 38px;
+    background: #555;
+    margin: 0 1px;
+}
+
+#content-right-ads ul li a {
+    display: block;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+#content-right-right {
+    width: 230px;
+    height: 321px;
+    float: right;
+}
+
+#special {
+    width: 230px;
+    height: 176px;
+    background: url(../images/upload/20120216.jpg);
+    transition: all 0.6s linear;
+}
+
+#special:hover {
+    transform: rotate(360deg);
+}
+
+#news {
+    margin-top: 10px;
+    height: 134px;
+    border: 1px solid #ccc;
+}
+
+#news h2 {
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#news ul li {
+    margin: 6px 0 0 10px;
+}
+
+#news ul li a {
+    color: #666;
+}
+
+#news ul li a:hover {
+    color: #0af;
+}
+/*添加链接提示*/
+#tooltip{
+background-color: #f7f5d1;
+border:1px solid #333;
+color:#333;
+display: none;
+padding:1px;
+position: absolute;
+}
+#content-right-bottom {
+    height: 227px;
+    margin-top: 15px;
+    /*border: 1px solid;*/
+}
+
+#activity-introduction {
+    height：24px;
+    border-bottom: 1px solid #ccc;
+}
+
+#activity-introduction h2 {
+    font-size: 13px;
+    width: 60px;
+    line-height: 22px;
+
+    float: left;
+}
+
+#activity-introduction ul li {
+    float: right;
+    width: 44px;
+    height: 22px;
+    margin-right: 10px;
+    line-height: 26px;
+    background: #ddd;
+    text-align: center;
+}
+
+#activity-introduction ul li a {
+    display: inline-block;
+    color: #000;
+    font-size: 13px;
+}
+
+#activity-introduction ul li a:hover {
+    text-decoration: underline;
+}
+#activity-introduction ul li a.textcolor{
+    color:#fff;
+}
+#activity-introduction ul li.bg{
+    background-color: #ff60a0;
+    /**/
+}
+#clear {
+    clear: both;
+}
+
+#shoes {
+    height: 203px;
+    overflow: hidden;
+    position: relative;
+}
+#shoes ul {
+    position: absolute;
+
+}
+#boy{
+
+    left:790px;
+}
+#girl{
+    left:790px;
+}
+#sport{
+    left:790px;
+}
+#shoes ul.position_left{
+     left:790px;
+}
+#shoes ul li {
+    float: left;
+    width: 183px;
+    margin: 8px 10px 0 0px;
+}
+
+#shoes ul li:nth-of-type(1) {
+    margin: 8px 10px 0 12px;
+}
+
+#shoes ul li a {
+    display: inline-block;
+    float: left;
+    width: 183px;
+    background: #eee;
+    height: 23px;
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+    line-height: 23px;
+}
+
+#shoes ul li a:hover {
+    color: #0af;
+}

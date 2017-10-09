@@ -1,0 +1,305 @@
+#content-right-left {
+    float: left;
+    width: 310px;
+    height: 558px;
+}
+
+#middle-shirt {
+    height: 310px;
+    width: 310px;
+    border: 1px solid #ccc;
+    position: relative;
+    /*z-index: 998;*/
+    /*float:left;*/
+    cursor: move;
+}
+#middle-shirt span{
+	display: inline-block;
+	position: absolute;
+	width: 123px;
+	height: 123px;
+	z-index: 999;
+	background: url(../images/advertise.jpg) no-repeat -1px -1px;
+	/*border-color: #fff;*/
+	opacity: 0.5;
+	display: none;
+
+}
+
+#middle-shirt img {
+    position: absolute;
+}
+#middle-shirt a{
+	display: inline-block;
+	width: 310px;
+	height: 310px;
+	overflow: hidden;
+}
+#look {
+    height: 21px;
+    width: 99px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/*//遮罩屏幕*/
+
+#screen {
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    z-index: 998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#screen p {
+    width: 150px;
+    background: #0f0;
+    z-index: 9999;
+    color: #000;
+    text-align: center;
+    display: none;
+}
+
+/*显示大图*/
+
+#bigshirttop {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 800px;
+    height: 800px;
+}
+
+#small-shirt {
+    height: 85px;
+    position: relative;
+}
+
+#yellow,
+#greenshirt,
+#blue {
+    display: none;
+    position: absolute;
+}
+
+#blue.show,#yellow.show,#greenshirt.show {
+    display: block;
+}
+
+#small-shirt img.one-border {
+    height: 85px;
+    width: 85px;
+    border: 1px solid #ccc;
+}
+
+#small-shirt img.hover-border {
+    height: 85px;
+    width: 85px;
+    border: 1px solid #666;
+}
+
+#small-shirt img {
+    cursor: pointer;
+}
+
+#shirt-information ul {
+    margin-top: 10px;
+    height: 20px;
+}
+
+#shirt-information ul li {
+    width: 60px;
+    float: left;
+    margin-right: 6px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    background-color: #eee;
+}
+
+#shirt-information ul li a {
+    color: #000;
+}
+
+#shirt-information ul li.bg {
+    background-color: #67a;
+    border: none;
+    border: 1px solid #67a;
+}
+
+#shirt-information ul li a.textcolor {
+    color: #fff;
+}
+
+#introduction {
+    border: 1px solid #aaa;
+    height: 88px;
+    width: 310px;
+    padding: 0;
+}
+
+#introduction div {
+    /*text-indent: -5em;*/
+    display: none;
+}
+
+#introduction div.show {
+    display: block;
+}
+
+
+#content-right-right {
+    height: 558px;
+    width: 466px;
+    float: right;
+}
+
+#content-right-right ul li {
+    margin-top: 10px;
+}
+
+#content-right-right ul li:nth-of-type(1) {
+    margin: 5px 0 -5px 0;
+    line-height: 24px;
+}
+
+#content-right-right strong {
+    font-weight: normal;
+}
+
+#content-right-right strong.del {
+    text-decoration: line-through;
+    color: #666;
+}
+
+#content-right-right strong.bold {
+    color: #Ff4F0A;
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 25px;
+}
+
+#content-right-right span.text-center {
+    line-height: 25px;
+}
+
+#shirt-color li a {
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    border: 1px solid #ccc;
+    margin: 2px 10px 0 0;
+}
+
+#shirt-color li a.bordercolor {
+    border: 1px solid #Ff4F0A;
+}
+
+#shirt-color li a:hover {
+    border: 1px solid #Ff4F0A;
+}
+
+#shirt-color li a.active {
+    border: 1px solid #Ff4F0A;
+}
+
+#size-change ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#size-change ul li.changebg {
+    background-color: #Ff4F0A;
+}
+
+#size-change ul li:nth-of-type(1) {
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+}
+
+#num-selected {
+    display: block;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+#score {
+    height: 16px;
+    width: 80px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#score-img {
+    position: absolute;
+    cursor: pointer;
+}
+
+#shopping-car {
+    cursor: pointer;
+}
+
+#prompt {
+    width: 500px;
+    height: 188px;
+    position: absolute;
+    /*border:1px solid;*/
+    box-shadow: 0 0 10px #0ef;
+    background: #fff;
+    z-index: 999;
+    display: none;
+    /*padding:30px;*/
+}
+
+
+
+#prompt h5 {
+    height: 24px;
+    background-color: #def;
+    /*background: url("../images/box.png") no-repeat -66px 0px #def;*/
+    color: #666;
+    line-height: 24px;
+    padding: 0 0 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#prompt h5 span {
+    display: inline-block;
+    height: 18px;
+    width: 17px;
+    background: url("../images/box.png") no-repeat -285px 2px;
+    position: absolute;
+    left: 470px;
+    top:3px;
+
+}
+
+#prompt-img {
+    float: left;
+    background: url("../images/box.png") no-repeat -66px 0px;
+    margin: 30px;
+    height: 32px;
+    width: 32px;
+    overflow: hidden;
+}
+
+#text {
+    margin: 40px 30px 30px 30px;
+}
+
+#text h4 {
+    margin-bottom: 10px;
+}
