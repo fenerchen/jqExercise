@@ -243,11 +243,8 @@ header {
     height: 28px;
     border-bottom: 1px solid #ccc;
     line-height: 32px;
-    /*margin: 0 auto;*/
-    /*text-align: :;*/
-    font-size: 12px;
-    display: flex;
-
+    margin: 0 auto;
+    font-size: 13px;
 }
 
 #promotion,
@@ -294,7 +291,7 @@ header {
 #female ul li,
 #men ul li,
 #bag ul li {
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 #promotion ul li a.red {
